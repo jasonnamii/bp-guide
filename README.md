@@ -1,5 +1,7 @@
 # bp-guide
 
+> 🇰🇷 [한국어 README](./README.ko.md)
+
 **VC-grade business plan writing guide — YC, Sequoia, and a16z frameworks unified into a single 11-section standard.**
 
 ## Prerequisites
