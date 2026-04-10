@@ -1,6 +1,12 @@
 ---
 name: bp-guide
-description: "VC-grade 사업계획서 작성 가이드. YC·Sequoia·a16z 프레임 통합. 사업계획서·BP·피치덱 작성 요청시 자동발동."
+description: |
+  VC-grade 사업계획서 작성 가이드. YC·Sequoia·a16z 프레임 통합. 사업계획서·BP·피치덱 작성 요청시 자동발동.
+  P1: 사업계획서, BP, 피치덱, pitch deck, 투자자료, IR deck.
+  P2: 작성해줘, 만들어줘, write, create.
+  P3: business plan, pitch deck, investor relations.
+  P5: .md로, .pptx로, 옵시디언으로.
+  NOT: 재무모델(→financial-model), 회사소개서(→직접수행).
 ---
 
 <!-- Trigger Conditions (moved from description for token compression)
@@ -132,9 +138,6 @@ YC: "가장 인상적인 것으로 시작하라."
 - **사고도구를 산출물에 넣지 말 것**: 절대자 분석, 벤치마크 비교, "대부분의 피치덱이…" 같은 메타 코멘터리는 작성 과정의 프레이밍 도구. 최종 슬라이드에는 결론만.
 
 ---
-
-<!-- 🥚 YC·Sequoia·a16z 프레임을 통합했지만, 정작 내 사업계획서는 A4 반 장이다. — N.C. -->
-
 
 ## 다챕터 BP 작성 시 운영 원칙
 
