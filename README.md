@@ -2,6 +2,11 @@
 
 **VC-grade business plan writing guide — YC, Sequoia, and a16z frameworks unified into a single 11-section standard.**
 
+## Prerequisites
+
+- **Obsidian Vault** — vault path referenced for document storage
+- **Claude Cowork or Claude Code** environment
+
 ## Goal
 
 Different VCs read business plans differently. BP-Guide integrates all three reading patterns into a unified 11-section framework that covers investor expectations across the entire ecosystem. A single, well-written plan works everywhere.
