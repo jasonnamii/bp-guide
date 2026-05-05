@@ -235,13 +235,41 @@ PRE_WRITE = 작성 시점 가드. VC 체크리스트 = 제출 전 사후. 둘 �
 
 ---
 
-## §CONFIRM_GATE
-산출물 송출 직전 형 컨펌 1회. → `paper-engine/references/_common/confirm-gate.md`
+## §CONFIRM_GATE — 송출 직전 형 컨펌 (3단계 가드)
 
+**목적:** PRE_WRITE 자가신고 우회 차단. 자체검증 통과 = 송출 ✗ → 형 컨펌 후 송출.
 
-## §INV NO_WORK_LABEL
-산출물·대화 작업 라벨 ZERO. → `paper-engine/references/no-work-label.md`
+**발동:** 산출물 송출 *직전* 1회.
 
+**형식 (verbatim):**
+```
+🔍 송출 전 검토 부탁드려요. AI 티·번역투·장황 있나요?
+[OK / 수정 / 재작성]
+```
+
+**규칙:**
+- 형 OK → 최종 송출
+- 형 수정 → 형 지적 부분만 PRE_WRITE 재진입 → 재출력
+- 형 재작성 → 모드 처음부터 재실행
+
+**SCOPE_OUT (컨펌 면제):**
+- ≤5줄 답변·단답·확인성·실행보고
+- 진단 본문 (대화 내 분석, 산출물 ✗)
+- 일반대화·핑퐁·컨펌게이트 자체
+
+**CHECK:** 산출물 송출인데 컨펌게이트 미발동 = FAIL → 송출 폐기·재출력.
+
+## §INV NO_WORK_LABEL (산출물·대화 본질 보호)
+
+| 항목 | 정의 |
+|------|------|
+| RULE | 산출물·대화 = 인간 언어. 작업 라벨 ZERO. (1만 페이지 1단어 = FAIL) |
+| 판정 | "이 단어, 이 대화 밖 사람이 사전 없이 읽을 수 있나?" NO → 작업 라벨 → 금지 |
+| ALLOW | 업계 전문용어(BP·VC·TAM·SAM·SOM·LTV·CAC·MRR·ARR·LOI·IR·MVP·KPI·BEP·MOIC·IRR) · 고유명사(YC·Sequoia·a16z) · 법조문 |
+| CONVERT | 라벨 발견 → 실명·평문 풀어쓰기. 예) "Y2 → 2년차" / "11섹션 프레임" → 실제 11개 이름 / "절대자 분석·프레이밍 도구·메타 코멘터리" → 본문에서 제거 |
+| SELF_CHECK | 산출 직전 자체 스캔. 1개라도 발견 = 차단·재작성. paper-engine cascade 경유 시 INV 13 자동 적용 |
+
+---
 
 ## Gotchas
 
