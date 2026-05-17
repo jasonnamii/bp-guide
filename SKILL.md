@@ -20,9 +20,30 @@ NOT: 재무모델(→financial-model), 회사소개서(→직접수행)
 
 글로벌 VC가 실제로 보는 관점으로 사업계획서를 작성하는 방법론.
 
+
+## Skill Boundaries
+
+- **하는 것** — VC-grade 사업계획서 작성 가이드.
+- **안 하는 것** — 재무모델(→financial-model), 회사소개서(→직접수행).
+
 **소스**: YC (Seed/Series A), Sequoia (Writing a Business Plan), a16z (Growth Deck).
 
 ---
+
+## When to Use
+
+- 사용자가 "작성해줘", "만들어줘", "write", "create." 같은 표현으로 발동
+- 도메인 작업이 필요한 시점
+- **안 쓸 때** — 재무모델(→financial-model), 회사소개서(→직접수행).
+
+
+## Prerequisites
+
+| # | 체크 | 미충족 시 |
+|---|------|-----------|
+| 1 | 대상·입력 명확 (스킬 발동 의도 확인) | 1줄 확인 후 진입 |
+| 2 | references/ 폴더 접근 가능 | inline fallback |
+
 
 ## VC가 보는 순서 — 실제 읽기 패턴
 
@@ -271,7 +292,27 @@ PRE_WRITE = 작성 시점 가드. VC 체크리스트 = 제출 전 사후. 둘 �
 
 ---
 
-## Gotchas
+## Reference Index
+
+| 파일 | 내용 | 언제 |
+|---|---|---|
+| `references/jason-corpus-examples.md` | jason corpus examples | 해당 단계 진입 시 |
+
+## Next Phase
+
+본 스킬 작업 후 자연스럽게 이어지는 흐름:
+
+- 후속 작업 → `financial-model`
+- 후속 작업 → `직접수행`
+
+## Output Path
+
+| 산출물 | 경로 |
+|---|---|
+| 주 산출물 | `mnt/outputs/bp-guide\_{topic}_{YYYY-MM-DD}.md` |
+| 리서치 결과 (해당 시) | `{VAULT}/_skills research/bp-guide/{YYYY-MM-DD}_{topic}.md` |
+
+## Failure Modes (Gotchas)
 
 - YC와 a16z 프레임을 동시 적용하면서 충돌하는 권고를 그대로 넣는 실수. **프레임 충돌 시 우선순위: YC(구조·간결성) > Sequoia(서사·흐름) > a16z(시장·스케일).** 예: YC "15슬라이드 이내" vs a16z "16슬라이드" → YC 우선.
 - TAM/SAM/SOM을 Top-Down으로만 산출하고 Bottom-Up 교차검증을 생략하는 패턴.
@@ -279,3 +320,11 @@ PRE_WRITE = 작성 시점 가드. VC 체크리스트 = 제출 전 사후. 둘 �
 - 투자자 톤이 아닌 내부 기획 톤으로 작성하는 실수. 수신자가 투자자임을 유지.
 
 실수 발견 시 이 섹션에 직접 추가.
+
+
+## ❌ WRONG vs ✅ CORRECT
+
+```
+❌ WRONG: 트리거 단어만 보고 발동 — 본질·범위 확인 ✗ → 오발동·범위 이탈
+✅ CORRECT: Skill Boundaries·When to Use 확인 후 발동 → 본질 작업만 수행
+```
