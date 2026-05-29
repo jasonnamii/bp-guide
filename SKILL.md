@@ -1,12 +1,7 @@
 ---
 name: bp-guide
 description: |
-  VC-grade 사업계획서 작성 가이드. YC·Sequoia·a16z 프레임 통합. 사업계획서·BP·피치덱 작성 요청시 자동발동.
-  P1: 사업계획서, BP, 피치덱, pitch deck, 투자자료, IR deck.
-  P2: 작성해줘, 만들어줘, write, create.
-  P3: business plan, pitch deck, investor relations.
-  P5: .md로, .pptx로, 옵시디언으로.
-  NOT: 재무모델(→financial-model), 회사소개서(→직접수행).
+  VC-grade 사업계획서 작성 가이드. YC·Sequoia·a16z 프레임 통합. 사업계획서·BP·피치덱 작성 요청시 자동발동. 트리거: 사업계획서, BP, 피치덱, pitch deck, 투자자료, IR deck, 작성해줘, 만들어줘, write, create. NOT: 재무모델(→financial-model), 회사소개서(→직접수행).
 ---
 
 <!-- Trigger Conditions (moved from description for token compression)
